@@ -26,6 +26,11 @@ P.S: The total PFLOPs required to train each model, is calculated by using the s
 | 06/30/2020 | GShard          |            | 600,000M    |           |                  |                 |
 | 06/20/2020 | Baidu RecSys-C  | N/A        | 2,000,000M  | N/A       | ~O(0.1)          | N/A             |
 | 06/20/2020 | Baidu RecSys-E  | N/A        | 10,000,000M | N/A       | ~O(0.1)          | N/A             |
+| 01/01/2021 | Switch Transformer | N/A     | 1,600,000M  | N/A       | N/A              | N/A             |
+| 03/14/2023 | GPT-4           | 8192       | 1,800,000M  | N/A       | 128GPUs          | 21,500,000,000  |
+| 12/14/2023 | Gemini (Ultra)  | 128,000    | 1,600,000M  | N/A       | 128GPUs          | GPT-4x100 (2024)|
+
+
 
 
 ## CV Models
