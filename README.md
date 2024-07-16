@@ -2,6 +2,10 @@
 
 This is a repository with the data used for the [AI and Memory Wall paper](https://arxiv.org/pdf/2403.14123.pdf). We report the number of paramters, feature size, as well as the total FLOPs for inference/training for SOTA models in CV, Speech Learning, and NLP. 
 
+Example after running `./src/plot_parameters_vs_time.py`
+![Alt text](./src/fig_size_vs_date.png)
+
+
 
 ## NLP Models
 We mostly focus on calculating the different metrics for transformer models, starting from the original BERT FLOPs for training/inference, as well as its parameters and memory footprint. We then calculate the same metrics for different BERT variations as reported in the table below.
