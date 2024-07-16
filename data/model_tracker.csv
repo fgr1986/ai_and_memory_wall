@@ -24,6 +24,6 @@ Date,Model,Token Size,#Params,#Features,Inference GFLOPs,Training PFLOPs,Model T
 30/06/2020,GShard,,600000,,,,NLP
 01/01/2021,Switch Transformer,N/A,1600000,N/A,N/A,N/A,NLP
 14/03/2023,GPT-4,8192,1800000,N/A,128GPUs,21500000000,NLP
-14/12/2023,Gemini (Nano-1),1800,N/A,N/A,N/A,N/A,NLP
-14/12/2023,Gemini (Nano-2),3250,N/A,N/A,N/A,N/A,NLP
+14/12/2023,Gemini (Nano-1),N/A,1800,N/A,N/A,N/A,NLP
+14/12/2023,Gemini (Nano-2),N/A,3250,N/A,N/A,N/A,NLP
 14/12/2023,Gemini (Ultra*),128000,1600000,N/A,N/A,N/A,NLP
