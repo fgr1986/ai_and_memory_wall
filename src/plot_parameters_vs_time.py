@@ -1,11 +1,12 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import scienceplots
+from adjustText import adjust_text
 from cycler import cycler
 
 plt.rcParams.update(
     {
-        "font.size": 12,
+        "font.size": 13,
         "font.weight": "normal",
         "axes.labelsize": 14,
         "axes.labelweight": "normal",
@@ -58,24 +59,25 @@ for model_type in df["Model Type"].unique():
         label=model_type,
     )
 
-# Adding labels for the points with varied alignment to avoid overlap
-alignments = [
-    ("right", "top"),
-    ("left", "bottom"),
-    ("center", "center"),
-    ("right", "bottom"),
-    ("left", "top"),
-]
-for i in range(len(df)):
-    ha, va = alignments[i % len(alignments)]
+# Adding labels for the points with dynamic adjustment to avoid overlap
+texts = [
     plt.text(
         df["Date"].iloc[i],
         df["#Params"].iloc[i] / 1e3,
         df["Model"].iloc[i],
-        fontsize=12,
-        ha=ha,
-        va=va,
+        fontsize=13,
+        ha='center',
+        va='center',
+        rotation=40,
     )
+    for i in range(len(df))
+]
+
+# adjust_text(
+#     texts,
+#     # only_move={"points": "y", "text": "y"},
+#     arrowprops=dict(arrowstyle="-", color="r", lw=0.5),
+# )
 
 plt.yscale("log")
 plt.xlabel("Date")
@@ -83,5 +85,5 @@ plt.ylabel("Params (Billions)")
 plt.title("Model Parameters Over Time by Type", fontsize=14)
 plt.legend()
 plt.grid(True, which="both", ls="--")
-fig.savefig("fig_size_vs_date.pdf")
-fig.savefig("fig_size_vs_date.png")
+fig.savefig("./fig_size_vs_date_adjusted.pdf")
+# fig.savefig("./fig_size_vs_date_adjusted.png")

@@ -1,7 +1,7 @@
 Date,Model,Token Size,#Params,#Features,Inference GFLOPs,Training PFLOPs,Model Type
 01/06/2012,AlexNet,227 x 227,61,,1.4,460,CV
 04/09/2014,VGG-19,224 x 224,138,,39,11000,CV
-10/09/2014,Seq2Seq,,11000,,,11000,NLP
+10/09/2014,Seq2Seq,,,,,11000,NLP
 02/12/2015,InceptionV3,299 x 299,24,,5.7,100000,CV
 10/12/2015,ResNet152,224 x 224,55,,23,11000,CV
 26/02/2016,InceptionV4,299 x 299,82,,24.6,,CV
